@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blueedtech</title>
+        <meta charset="utf-8">
+        <style>
+            body{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            .titulo{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+            }
+            .conteudo{
+                background-color:#3359EC;
+                color: white;
+                padding: 10px;
+            }
+            .titulo-turma{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            .conteudo-turma{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                color: black;
+            }
+            .agenda{
+                background-color:#FFE921;
+                flex-grow: 1;
+            }
+            .lista{
+                background-color:#FF58F0;
+                flex-grow: 1;
+            }
+            .conteudo-turma-item{
+                border: 1px black solid;
+                padding: 10px;
+                border-radius: 20px;
+                margin: 5px;
+            }
+            .lista table th, td{
+                border: 1px black solid;
+                padding: 10px;
+                width: 100%
+            }
+        </style>
+    </head>
+    <body>
+        <div class="titulo">
+            <a href="http://blueedtech.com.br">
+                <img src="https://blueedtech.com.br/wp-content/themes/blue/dist/images/logo-blue-croped.gif" width="100" alt="Logo da Blue" />
+            </a><h1>Blueedtech</h1>
+        </div>
+        <div class="conteudo">
+            <div class="titulo-turma">
+                <h2>Módulo 2 - Web, Cloud e Database</h2>
+            </div>
+
+            <div class="conteudo-turma">
+                <div class="agenda conteudo-turma-item">
+                    <br />
+                    <b>Agenda de hoje</b><br />
+                    <ul>
+                        <li>Introdução ao desenvolvimento web</li>
+                        <li>Estrutura HTML</li>
+                        <li>Layout de páginas com CSS</li>
+                    </ul>
+                </div>
+                <div class="lista conteudo-turma-item">
+                    <br />
+                    <b>Lista de presença</b><br /><br />
+                    <table>
+                        <tr>
+                            <th id="item">Aluno</th>
+                            <th>Presente?</th>
+                        </tr>
+                        <tr>
+                            <td>Felipe Moraes</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td>Gabriela Silva</td>
+                            <td>Não</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+    

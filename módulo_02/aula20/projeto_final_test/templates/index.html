@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beer on the table</title>
+    <link rel="stylesheet" href="/static/estilo.css" />
+</head>
+<body>
+
+    
+    <div class="bloco">
+        <h2>Catálogo</h2>
+    </div>
+
+    <div class="bloco">
+        <table class="tabela">
+            {% for registro in registros %}
+
+            
+               
+                <td>{{ registro["nome"] }}</td>
+                <td><img src=" {{ registro['imagem_url'] }}" alt="{{ registro['nome'] }}" width="150" height="200" /></td>
+
+            
+
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>

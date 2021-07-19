@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 2</title>
+    <script type="text/javascript">
+        function altera(){
+            const elemento1 = this.document.getElementById('botao');
+            const elemento2 = this.document.getElementByClassname('classe1');
+            if (elemento1.innerText == "Texto mudou"){
+                for(const elemento of elemento2){
+                    elemento.innerHTML = 'mudando <b>innerHTML</b>'
+                }
+                elemento2.innerHTML = '<h1>este é diferente</h1>'
+                elemento1.innerText = "Texto voltou";
+                this.document.bgColor = 'blue';
+            }
+            else{
+                for(const elemento of elemento2){
+                    elemento.innerHTML = 'mudando <b>innerHTML</b> de volta'
+                }
+                elemento1.innerText = "Texto mudou";
+                this.document.bgColor = 'red';
+            }
+        }
+    </script>
+</head>
+<body>
+    <button id="botao" onclick="altera()">Valor normal</button>
+    
+</body>
+</html>
