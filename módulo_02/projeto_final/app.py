@@ -3,6 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
+
 # Configurações de acesso ao banco de dados
 user = 'nmenxgtc'
 password = 'BCjmH5DUroyjsszh6mViEz32XDK0qo_6'
